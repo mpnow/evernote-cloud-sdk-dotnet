@@ -1,0 +1,15 @@
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\EvernoteSDK.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\EvernoteSDK.pdb
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\EvernoteSDK.xml
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\EvernoteSDK.tlb
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\CsQuery.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\en-html2enml.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\Evernote.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\EvernoteOAuthNet.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\PreMailer.Net.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\SgmlReaderDll.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\bin\Debug\Thrift.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\obj\Debug\EvernoteSDK.Properties.Resources.resources
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\obj\Debug\EvernoteSDK.csproj.GenerateResource.Cache
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\obj\Debug\EvernoteSDK.dll
+C:\Users\Phil\Documents\Visual Studio 2013\Projects\Evernote-SDK-NET\src\EvernoteSDK\obj\Debug\EvernoteSDK.pdb

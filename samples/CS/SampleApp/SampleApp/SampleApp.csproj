@@ -32,11 +32,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SampleApp.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EvernoteSDK">
+    <Reference Include="CsQuery">
+      <HintPath>..\..\..\..\assemblies\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="en-html2enml">
+      <HintPath>..\..\..\..\assemblies\en-html2enml.dll</HintPath>
+    </Reference>
+    <Reference Include="Evernote">
+      <HintPath>..\..\..\..\assemblies\Evernote.dll</HintPath>
+    </Reference>
+    <Reference Include="EvernoteOAuthNet">
+      <HintPath>..\..\..\..\assemblies\EvernoteOAuthNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EvernoteSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\assemblies\EvernoteSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PreMailer.Net">
+      <HintPath>..\..\..\..\assemblies\PreMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll">
+      <HintPath>..\..\..\..\assemblies\SgmlReaderDll.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,6 +68,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Thrift">
+      <HintPath>..\..\..\..\assemblies\Thrift.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -60,6 +83,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
