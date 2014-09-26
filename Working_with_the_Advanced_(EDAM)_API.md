@@ -72,8 +72,8 @@ You might want to, say, use the handy unified `ListNotebooks` method on ENSessio
 `ENNoteRef` points to a note that exists somewhere on the service. Let's say you want to download that note using the EDAM API. You can ask the session for a corresponding note store, and then use the `Guid` property of the note ref to know which note you are referring to. e.g.
 
     ENNoteRef noteRef = /* some note ref from an earlier call to find or upload */
-    ENNoteStoreClient noteStore = ENSession.SharedSession.NoteStoreForNoteRef(noteRef);
-    Note edamNote = noteStore.GetNoteWithGuid(noteRef.Guid);
+    ENNoteStoreClient noteStore = ENSessionAdvanced.SharedSession.NoteStoreForNoteRef(noteRef);
+    Note edamNote = noteStore.GetNote(noteRef.Guid, true, false, false, false);
 
 `ENNotebook` offers similar additions, so you can use the main SDK's "listNotebooks" method to get the merged set of all user-visible notebooks, and then use one of those notebooks directly in the EDAM API. 
 

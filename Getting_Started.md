@@ -129,7 +129,7 @@ We saw at the beginning in "Hello World!" how you'd create a new, plaintext note
 
 You aren't restricted to images; you can use any kind of file. Just use the appropriate initializer for `ENResource`. You'll need to know the data's MIME type to pass along.
 
-### Creating a note using HTML or web content.
+### Creating a note using HTML or web content
 
 The SDK contains a facility for supplying HTML or web content to a note.
 
@@ -166,6 +166,18 @@ The SDK provides a simplified search operation that can find notes available to 
 If you specify a notebook, the search will be limited to that notebook. If you omit the notebook, you can specify different combinations of search scope (personal, business, shared notebooks, etc), but please be aware of performance considerations. 
 
 **Performance Warning** Doing a broadly scoped search, and/or specifying a very high number of max results against a user's account with significant content can result in slow responses and a poor user experience. If the number of results is unbounded, the client may run out of memory and be terminated if there are too many results! Business scope in particular can produce an unpredictable amount of results. Please consider your usage very carefully here. You can do paged searches, and have other low-level controls by [using the advanced API.](Working_with_the_Advanced_\(EDAM\)_API.md)
+
+### Using the COM interface
+
+This SDK is COM-compatible, so you can use it to integrate with Evernote in COM-based environments like Microsoft Office VBA. Because COM doesn't support use of static methods, there are a few differences when using the SDK via its COM interface.
+
+**Instantiation** Because static methods are not allowed, it's necessary to instantiate an "ENSessionCOM" object prior to calling `SetSharedSessionConsumerKey` (or `SetSharedSessionDeveloperToken`). 
+
+    Dim EvernoteSession As New ENSessionCOM
+    ' Be sure to put your own consumer key and consumer secret here.
+    Call EvernoteSession.SetSharedSessionConsumerKey("your key", "your secret")
+
+**Other Changes** For the same reason, the following objects should be instantiated in place of using their static counterparts in the regular API: `ENNoteSearchCOM` and `ENNoteContentCOM`.
 
 ### What else can I do?
 
