@@ -35,6 +35,8 @@ You have a few options:
 
 - (Alternative 2) If you want to build the entire SDK source alongside your own project files, you can do that too. The source code for this SDK is included here in the repository. Note: You'll need to start Visual Studio using "Run as Administrator" privileges in order to rebuild the SDK -- because it supports COM, it needs access to the Windows registry when it builds.
 
+- *For use in a COM environment like Microsoft Office VBA.* Run the "EvernoteSDK_COMSetup.msi" installer that's included in the repository. This will install the necessary assemblies and register the SDK on your machine so it will be available to the COM subsystem.
+
 ### Add the standard include file to any file that uses the Evernote SDK
 
     #using EvernoteSDK;
@@ -170,6 +172,8 @@ If you specify a notebook, the search will be limited to that notebook. If you o
 ### Using the COM interface
 
 This SDK is COM-compatible, so you can use it to integrate with Evernote in COM-based environments like Microsoft Office VBA. Because COM doesn't support use of static methods, there are a few differences when using the SDK via its COM interface.
+
+**Reference the SDK** In order to use the SDK with COM, be sure to add a reference to the library first. For example, in a Microsoft Word or Excel Visual Basic window, from the main menu you would select **Tools** > **Add References...**, then place a checkmark next to **Evernote Cloud SDK for .NET**.
 
 **Instantiation** Because static methods are not allowed, it's necessary to instantiate an "ENSessionCOM" object prior to calling `SetSharedSessionConsumerKey` (or `SetSharedSessionDeveloperToken`). 
 
